@@ -1,0 +1,283 @@
+.otzivi
+    position: relative
+    margin-bottom: 100px
+    z-index: 0
+    margin-top: -90px
+    +lg
+        margin-top: 50px
+    &-bg
+        position: absolute
+        left: -250px
+        top: -50px
+        +xxl
+            left: -310px
+        +xl2
+            left: -310px
+        +md
+            display: none
+    &-title
+        color: #564f4f;
+        font-size: 72px;
+        font-weight: 400;
+        font-family: 'PFDinTextPro-EXThin'
+        line-height: 61px;
+        /* Text style for "Н, аши зве" */
+        letter-spacing: 1.63px;
+        margin-bottom: 65px
+        +sm
+            font-size: 48px
+    &-desc
+        font-family: 'Marianna'
+        color: #e0a46c;
+        position: absolute
+        top: 40px
+        left: 250px
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 45.9px;
+        /* Text style for "Отзывы" */
+        letter-spacing: 1.44px;
+        +xxl
+            left: 109px
+        +xl2
+            left: 110px
+        +sm
+            font-size: 48px
+            top: 35px
+    &-box
+        display: flex
+        justify-content: flex-start
+        +lg
+            flex-wrap: wrap
+
+    &-box__item
+        padding: 20px 0 23px 22px
+        position: relative
+        +sm
+            padding: 0 11px 20px 11px
+    &-box__item-img
+        padding-left: 15px
+        +xs
+            padding-top: 30px
+     
+    &-box__item-text
+        color: #564f4f;
+        font-family: 'PFDinTextPro-NormalRegular'
+        font-size: 15px;
+        font-weight: 300;
+        padding-top: 23px
+        padding-left: 20px
+        line-height: 20px;
+        /* Text style for "Впервые в" */
+        letter-spacing: 0.9px;
+        &:after
+            content: ""
+            display: block
+            width: 100%
+            height: 2px
+            background-color: #eeedec;
+            margin-top: 20px
+            margin-bottom: 41px
+    &-box__item-mod 
+        &:after
+            content: ""
+            display: block
+            width: 100%
+            height: 2px
+            background-color: #eeedec;
+            margin-top: 40px
+            margin-bottom: 41px
+    &-box__item-mod--second
+        &:after
+            content: ""
+            display: block
+            width: 100%
+            height: 2px
+            background-color: #eeedec;
+            margin-top: 46px
+            margin-bottom: 54x
+    &-box__link 
+        color: #e2a66f;
+        font-size: 20px;
+        font-family: 'PFDinTextPro-Regular'
+        font-weight: 400;
+        padding-left: 22px
+        text-decoration: none
+        text-transform: uppercase;
+        /* Text style for "С, тоимоть" */
+        color: #e2a66f;
+        letter-spacing: 0.59px;
+    &-box__span
+        color: #e2a66f;
+        font-family: 'PFDinTextPro-Bold'
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        padding-left: 5px
+        text-decoration: none
+        +sm
+            padding-left: 0 
+
+    &-item
+        position: absolute
+        width: 372px;
+        height: 88px;
+        background-color: #e2a66f;
+        bottom: -45px
+        right: 45px
+        z-index: 10
+    &-item__prev
+       position: relative !important
+       top: 38px !important
+       left: 22px
+       cursor: pointer
+       z-index: 10
+    &-item__next
+       position: relative
+       top: 38px
+       left: 220px
+       cursor: pointer
+       z-index: 10
+    &-box__desc-title
+        display: inline-block
+        color: #564f4f;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'PFDinTextPro-Bold'
+        /* Text style for "Объем" */
+        letter-spacing: 1.12px;
+        &:after
+            content: ""
+            display: inline-block
+            width: 148px
+            vertical-align: middle
+            height: 2px;
+            background-color: #fbeae5;
+            margin: 0 9px 0 14px
+    &-box__desc-title1
+        display: inline-block
+        color: #564f4f;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'PFDinTextPro-Bold'
+        /* Text style for "Объем" */
+        letter-spacing: 1.12px;
+        &:after
+            content: ""
+            display: inline-block
+            width: 140px
+            vertical-align: middle
+            height: 2px;
+            background-color: #fbeae5;
+            margin: 0 9px 0 14px
+            
+    &-box__desc
+        padding-left: 22px
+    &-box__desc-text
+        display: inline-block
+        font-family: 'PFDinTextPro-NormalRegular'
+        color: #564f4f;
+        font-size: 14px;
+        font-weight: 400;
+        /* Text style for "Одинарный" */
+        letter-spacing: 1.12px;
+    &-box__top
+        margin-top: 20px
+        margin-bottom: 29px
+.owl-carousel 
+    box-shadow: 6px 16px 62px rgba(225, 208, 189, 0.69);
+    +lg
+        margin-top: 100px !important
+    +sm
+        margin-top: 50px !important
+
+
+.owl-carousel .owl-item img
+    max-width: 100% !important
+    width: auto !important
+    object-fit: cover
+    +lg
+        flex: 0 0 100%
+        max-width: 100% !important
+    +sm
+        object-fit: contain
+        margin-top: -30px
+    +xs
+        margin-top: -90px
+
+        
+        
+.owl-carousel .owl-nav .owl-prev
+    background: url('../img/prev.png') no-repeat !important
+    width: 64px;
+    outline: none !important
+    position: absolute
+    top: 41px
+    left: 22px
+
+    height: 12px;
+    &:hover
+        transition: 1s linear
+        transform: translateX(-10px) 
+.owl-carousel .owl-nav .owl-next
+    background: url('../img/next.png') no-repeat !important
+    width: 64px;
+    height: 12px;
+    outline: none !important
+    position: absolute
+    top: 41px
+    right: 22px
+    +sm
+        
+    &:hover
+        transition: 1s linear
+        transform: translateX(10px)
+.owl-carousel .owl-nav .owl-prev span
+    display: none !important
+.owl-carousel .owl-nav .owl-next span
+    display: none !important
+.owl-carousel .dots
+    display: none !important
+.owl-nav
+    position: absolute !important
+    bottom: -40px
+    z-index: 100
+    right: 45px
+    width: 372px;
+    height: 88px;
+    background-color: #e2a66f;
+    z-index: 10
+    +sm
+        right: 0
+        width: 100%
+        bottom: -86px
+.owl-theme .owl-dots
+    position: absolute
+    right: 185px
+    z-index: 10
+    bottom: -15px
+    +sm
+        bottom: -60px
+        right: 40%
+    +xs
+        right: 37%
+
+        
+.owl-theme .owl-dots .owl-dot span
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    margin: 5px 7px;
+    display: block !important
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    background-color: #e2a66f;
+    &:hover
+        background-color: #ffffff
+        border: none
+.owl-carousel button.owl-dot
+    outline: none

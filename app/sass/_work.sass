@@ -1,0 +1,298 @@
+.work
+    position: relative
+    &-title
+        color: #564f4f;
+        font-size: 72px;
+        font-weight: 400;
+        font-family: 'PFDinTextPro-EXThin';
+        line-height: 61px;
+        letter-spacing: 1.63px;
+        margin-bottom: 102px
+        +sm
+            margin-top: 150px
+            font-size: 48px
+            margin-bottom: 50px
+    &-desc
+        font-family: 'Marianna';
+        color: #e0a46c;
+        position: absolute;
+        top: 35px;
+        left: 240px;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 45.9px;
+        letter-spacing: 1.44px;
+        +sm
+            top: 50px
+            font-size: 48px
+            left: 230px
+            top: 25px
+
+    &-item
+        display: flex
+        flex-wrap: wrap
+        margin-right: 15px
+        margin-left: 15px
+    &-item__box
+        position: relative
+        margin-bottom: 108px
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        +lg
+            flex: 0 0 100%;
+            max-width: 100%;
+        +sm
+            margin-bottom: 0px
+    &-item__arrow--first
+        &:after
+            content: ""
+            display: inline-block
+            background: url("../img/arrow-right-1.png")  no-repeat center
+            width: 100%
+            height: 23px
+            position: absolute
+            left: 115px
+            top: 75px
+            +lg
+                transform: rotate(100deg)
+                left: 150px
+                top: 300px
+            +sm
+                display: none
+    &-item__arrow--second
+        &:after
+            content: ""
+            display: inline-block
+            background: url("../img/arrow-right-2.png")  no-repeat center
+            width: 100%
+            height: 40px
+            position: absolute
+            left: 110px
+            top: 75px
+            +lg
+                transform: rotate(110deg)
+                left: 155px
+                top: 300px
+            +sm
+                display: none
+    &-item__arrow--three
+        &:after
+            content: ""
+            display: inline-block
+            background: url("../img/arrow-right-3.png")  no-repeat center
+            width: 100%
+            height: 193px
+            position: absolute
+            bottom: -230px
+            right: -90px
+            +sm
+                display: none
+    &-item__arrow--four
+        &:before
+            content: ""
+            display: inline-block
+            background: url("../img/arrow-right-4.png")  no-repeat center
+            width: 100%
+            height: 193px
+            position: absolute
+            right: 295px
+            top: 0px
+            +lg
+                right: -100px
+                top: 250px
+                transform: rotate(300deg)
+            +sm
+                display: none
+    &-item__bg
+        position: relative
+    &-item__img
+        max-width: 100%
+        vertical-align: middle
+        +sm
+            max-width: 35%  
+    &-item__box-bg
+        max-width: 100%
+        vertical-align: middle 
+        width: 224px;
+        height: 224px;
+        background-color: #f6f3f0;
+        opacity: 0.6;
+        border-radius: 50%
+        animation: pulse 2s linear infinite
+    &-down
+        +lg
+            margin-top: 25px
+    &-item__arrow--six
+        +lg
+            order: 5
+    &-item__position
+        position: relative
+        +lg
+            order: 6
+    &-item__box-circle
+        width: 80px;
+        height: 80px;
+        background-color: #e2a66f;
+        border-radius: 50%
+        position: absolute
+        top: 72px
+        left: 72px
+        z-index: 100
+        cursor: pointer
+        &:hover
+            background-color: #57575b
+    &-item__box-title
+        position: absolute
+        top: 15px
+        left: 110px
+        z-index: 0
+        color: #e0a46c;
+        font-family: Marianna;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 45.9px;
+        /* Text style for "Видео" */
+        letter-spacing: 1.44px;
+    &-item__box-play
+        background: url("../img/play.png") center no-repeat
+        width: 21px;
+        height: 24px;
+        background-size: cover
+        position: absolute
+        top: 28px
+        left: 35px
+    &-item__number
+        font-family: 'Playfair Display', serif;
+        color: #e2a66f;
+        font-size: 145px;
+        font-style: italic;
+        /* Text style for "0, 1" */
+        letter-spacing: -0.37px;
+        position: absolute
+        top: -130px
+        left: 102px
+        +sm
+            font-size: 72px
+            top: -70px
+            left: 70px
+    &-up
+        margin-top: 25px
+    &-content
+        margin-top: 40px
+    &-item__mod
+        right: 0px !important
+    &-item__mod1
+        right: -10px !important
+    &-item__mod2
+        right: 90px !important
+        top: -130px !important
+        +sm
+            left: 195px !important
+    &-item__mod3
+        right: 50px !important
+    &-item__mod4
+        right: -20px !important
+    &-item__circle
+        position: absolute
+        left: 40px
+        top: 40px
+        width: 145px;
+        height: 145px;
+        background-color: #f6f3f0;
+        opacity: 0.6;
+        border-radius: 50%
+        animation: pulse 2s linear infinite
+    &-item__text
+        font-family: 'PFDinTextPro-NormalRegular';
+        color: #bcb2a8;
+        font-size: 13px;
+        position: absolute
+        right: 40px
+        top: -30px
+        white-space: nowrap
+        font-weight: 400;
+        /* Text style for "Удаляем пу" */
+        letter-spacing: 0.97px;
+        +lg
+            left: 270px
+        +sm
+            left: 170px
+            
+    &-video
+        width: 100vw
+        height: 100vh
+        position: fixed
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        z-index: 9999
+        display: none
+        transition: 1s linear
+    &-video__box
+        display: flex
+        justify-content: center
+        width: 100vw
+        background: rgba(256,256,256,.7)
+        height: 100vh
+        z-index: 9999
+        align-items: center
+     
+    &-video__iframe
+        width: 80vw
+        height: 80vh
+        +lg
+            width: 100% !important
+            height: 100vh
+        +md
+            height: 36%
+    &-video__exit
+        background-color: #e0a46c
+        width: 50px
+        height: 50px    
+        position: absolute
+        top: 0
+        right: 0
+        cursor: pointer
+        +lg
+            position: absolute
+            right: 0
+            top: 0px
+        +sm
+            top: 32%  
+        span
+            width: 21px
+            height: 1px
+            background-color: #fff
+            display: block
+            left: 15px
+            top: 24px
+            cursor: pointer
+            position: absolute
+            &:nth-child(1)
+                transform: rotate(45deg)
+            &:nth-child(2)
+                transform: rotate(-45deg)
+            
+.video-animate
+    animation: video-up 1.5s cubic-bezier(0.25,0.1,0.25,1)
+
+@keyframes video-up
+    from
+        top: -200px
+    to
+        top: 0px
+@keyframes pulse 
+    0% 
+        translate: transform(scale(.7));
+    60% 
+        translate: transform(scale(1));
+    100% 
+        translate: transform(scale(.7));
+        box-shadow: 0 0 0 0 rgba(#f6f3f0, 0.6);
+
+.active-video
+    display: block !important
+    
+.remove-video
+    display: none

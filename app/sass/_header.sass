@@ -1,0 +1,698 @@
+.header
+    &-box
+        display: flex
+        justify-content: space-between
+    &-menu
+        margin-top: 53px
+        +lg
+            display: none
+        ul
+            list-style-type: none
+            padding: 0
+            margin: 0
+            li
+                display: inline-block
+                margin-right: 50px
+                &:last-child
+                    margin-right: 0px
+                a
+                    color: #57575b;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 23px;
+                    font-family: 'PFDinTextPro-Regular'
+                    text-transform: uppercase;
+                    letter-spacing: 1.6px;
+                    text-decoration: none
+                    &:after
+                        content: ""
+                        display: block
+                        width: 100%
+                        margin-top: 3px
+                        height: 2px;
+                        background-color: #e0a46c;
+                    &:hover:after
+                        content: ""
+                        display: block
+                        width: 100%
+                        margin-top: 3px
+                        transition: 1s easy
+                        height: 2px;
+                        background-color: #5d5d61;
+    &-logo
+        max-width: 100%
+        margin-top: 38px
+        display: block
+        margin-right: 120px
+        +lg
+            display: none
+    &-mobile
+        display: none
+        +lg
+            display: block
+            box-shadow: 0 7px 32px rgba(225, 208, 189, 0.54);
+            background-color: #ffffff;
+            width: 100%
+            position: fixed
+            z-index: 1000
+            top: 0
+            padding: 12px 0
+
+
+    &-logo__mobile
+        max-width: 100%
+        display: none
+        +lg
+            display: inline-block
+    &-item__mobile
+        float: right
+        vertical-align: middle
+        margin-top: 7px
+        margin-right: 74px
+
+    &-phone
+        +lg
+            display: inline-block
+            max-width: 100%
+            object-fit: cover
+            
+
+    &-item__phone
+        color: #57575b;
+        font-size: 16px;
+        display: inline-block
+        font-weight: 400;
+        line-height: 23px;
+        text-transform: uppercase;
+        /* Text style for "8,  (234)" */
+        letter-spacing: 1.6px;
+        margin-right: 35px
+        font-family: 'PFDinTextPro-Regular'
+        text-decoration: none
+    &-item__link
+        color: #57575b;
+        cursor: pointer
+        font-size: 16px;
+        z-index: 10
+        font-weight: 400;
+        font-family: 'PFDinTextPro-Regular'
+        line-height: 23px;
+        display: inline-block
+        text-transform: uppercase;
+        /* Text style for "О, братный" */
+        letter-spacing: 1.6px;
+        &:after
+            content: ""
+            display: block
+            width: 100%
+            margin-top: 3px
+            height: 2px;
+            background-color: #e0a46c;
+        &:hover:after
+            content: ""
+            display: block
+            width: 100%
+            margin-top: 3px
+            transition: 1s easy
+            height: 2px;
+            background-color: #5d5d61;
+
+    &-item
+        margin-top: 53px
+        z-index: 10
+        +lg
+            display: none
+    &-row
+        display: flex
+        justify-content: space-between
+        +lg
+            margin-top: 50px
+    &-row__bg
+        max-width: 75%
+        object-fit: contain
+        position: relative
+        left: 50px
+        bottom: 80px
+        z-index: -10
+        animation: opacity-item 3s linear
+        +xxl
+            max-width: 100%
+            bottom: 60px
+            left: 120px
+           
+        +xl2
+            max-width: 45%
+            left: 0
+            bottom: 120px
+        +lg
+            display: none
+        
+
+    &-row__box-title
+        color: #564f4f;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 61px;
+        margin-top: 70px
+        font-family: 'PFDinTextPro-EXThin'
+        white-space: nowrap
+        /* Text style for "И, деальны" */
+        letter-spacing: 1.63px;
+        animation: animate 1s cubic-bezier(.57,.21,.69,1.25)
+        +xl2
+            margin-top: 20px
+        +sm
+            font-size: 50px
+            line-height: 40px;
+            /* Text style for "И, деальны" */
+            letter-spacing: 1.02px;
+
+        +lg
+            margin-top: 50px
+    &-social
+        position: fixed
+        right: 20px
+        top: 153px
+        z-index: 9999
+        vertical-align: middle
+        +xxl
+            right: 70px
+        +xl2
+            right: 30px
+        +xl
+            right: 30px
+        +lg
+            display: none
+    &-social a
+        text-decoration: none
+    &-social__icons
+        display: flex !important
+        margin-bottom: 25px
+        z-index: 1000 !important
+        justify-content: center !important
+        color: #d4d4d4 !important
+        align-items: center !important
+        cursor: pointer
+        vertical-align: middle !important
+        font-size: 17px !important
+        &:hover
+            color: #deb485 !important
+    &-row__box
+        position: relative
+        +lg
+            display: block
+            margin-left: auto
+            margin-right: auto
+            width: 100%
+    &-row__box-desc
+        color: #e0a46c;
+        font-family: Marianna;
+        font-size: 144px
+        font-weight: 400;
+        line-height: 45.9px;
+        position: absolute
+        top: 175px
+        left: 240px
+        letter-spacing: 2.88px;
+        +xl2
+            top: 135px
+        +lg
+            top: 175px
+        +sm
+            font-size: 72px 
+            left: 157px
+            top: 155px
+    &-scroll
+        position: absolute
+        left: -50px
+        bottom: -200px
+        display: inline-block
+        transform: rotate(270deg)
+        color: #cac8c7;
+        font-size: 16px;
+        font-family: 'PFDinTextPro-Regular'
+        text-transform: uppercase;
+        text-decoration: none
+        letter-spacing: 1.6px;
+        &::after
+            content: ""
+            display: inline-block
+            width: 132px;
+            height: 2px;
+            vertical-align: middle
+            background-color: #e0a46c;
+            margin-left: 20px
+            animation: elasticus 3s linear infinite;
+        +xxl
+            left: -250px
+            bottom: 270px
+        +xl2
+            left: 0
+            bottom: -200px
+            display: none
+        
+           
+    &-row__box
+        position: relative
+    &-form
+        position: absolute
+        width: 687px;
+        top: 360px
+        height: 188px;
+        z-index: 100
+        box-shadow: 6px 16px 62px rgba(225, 208, 189, 0.69);
+        background-color: #ffffff;
+        padding: 46px 0 0 40px
+        +xl2
+            top: 295px
+        +lg
+            position: static
+            display: block
+            width: 70%
+            margin-left: auto
+            margin-right: auto
+            padding: 40px
+            margin-top: 160px
+            height: auto
+            text-align: center
+        +md
+            width: 80%
+        +sm
+            width: 100%
+            text-align: left
+            padding: 30px 15px
+            margin-top: 140px
+
+    &-form__top
+        margin-top: 19px
+
+    &-form__input
+        width: 200px;
+        border: 1px solid #e9d0b4;
+        background-color: #ffffff;
+        padding: 14px 0 15px 16px
+        color: #e2a66f;
+        vertical-align: middle
+        font-family: 'PFDinTextPro-NormalRegular'
+        margin-right: 12px
+        +lg
+            width: 70%
+            margin-bottom: 14px
+            margin-right: 0
+        +sm
+            width: 100%
+        &::placeholder
+            color: #ddd6cf;
+            font-family: 'PFDinTextPro-NormalRegular'
+            font-size: 14px;
+            font-weight: 400;
+            /* Text style for "Ваше имя" */
+            letter-spacing: 1.96px;
+        &:focus
+            border-color: #57575b;
+    &-form__btn
+        width: 190px;
+        background-color: #e2a66f;
+        padding: 12.5px 0
+        color: #ffffff;
+        border: none
+        vertical-align: middle
+        font-family: 'PFDinTextPro-Regular'
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "о, н-лайн" */
+        letter-spacing: 0.59px;
+        &:hover
+            background-color: #57575b;
+        +lg
+            width: 70%
+        +sm
+            width: 100%
+    
+    &-form__title 
+        color: #e2a66f;
+        font-family: 'PFDinTextPro-Bold'
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        /* Text style for "Запись на" */
+        letter-spacing: 2.52px;
+    &-item__bg
+        position: absolute
+        left: -140px
+        top: 330px
+        z-index: -10
+        +xxl
+            left: -210px
+        +xl2
+            left: -170px
+        +lg
+            left: 30px
+            max-width: 50%
+            top: 300px
+        +sm
+            top: 200px
+    &-pop__bg
+        position: fixed
+        width: 100vw
+        height: 100vh
+        right: 0
+        top: 0
+        display: none
+        z-index: 9999
+        background-color: rgba(256,256,256,.7)
+
+    &-pop
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 629px;
+        height: 515px;
+        z-index: 9999
+        padding: 46px 98px 102px 98px
+        text-align: center
+        box-shadow: 6px 16px 62px rgba(225, 208, 189, 0.69);
+        background-color: #ffffff;
+        +lg
+            width: 100vw
+            height: 100vh
+            padding-top: 100px
+        +sm
+            padding: 100px 30px
+    &-pop__title
+        font-family: 'PFDinTextPro-NormalRegular'
+        color: #e2a66f;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "Заказать о" */
+        letter-spacing: 3.36px;
+        padding-bottom: 54px
+    &-pop__input
+        width: 100%
+        display: block
+        border: 1px solid #e9d0b4;
+        background-color: #ffffff;
+        padding: 30px 0 30px 25px
+        color: #e2a66f;
+        vertical-align: middle
+        font-family: 'PFDinTextPro-NormalRegular'
+        margin-right: 12px
+        &::placeholder
+            color: #ddd6cf;
+            font-family: 'PFDinTextPro-NormalRegular'
+            font-size: 14px;
+            font-weight: 400;
+            /* Text style for "Ваше имя" */
+            letter-spacing: 1.96px;
+        &:focus
+            border-color: #57575b;
+    &-pop__btn
+        width: 100%
+        background-color: #e2a66f;
+        padding: 27px 0 27px 0px
+        color: #ffffff;
+        border: none
+        vertical-align: middle
+        font-family: 'PFDinTextPro-Regular'
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "о, н-лайн" */
+        letter-spacing: 0.59px;
+        &:hover
+            background-color: #57575b;
+    &-pop__exit
+        width: 50px;
+        height: 50px;
+        background-color: #e2a66f;
+        position: absolute
+        right: -50px
+        z-index: -100
+        top: 0
+        span
+            width: 21px
+            height: 1px
+            background-color: #fff
+            display: block
+            left: 15px
+            top: 25px
+            cursor: pointer
+            position: absolute
+            &:nth-child(1)
+                transform: rotate(45deg)
+            &:nth-child(2)
+                transform: rotate(-45deg)
+        +lg
+            z-index: 100
+            right: 0
+        
+
+.body-opacity
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    z-index: 9999
+    background: rgba(256,256,256,.7)
+    transition: 1s linear
+
+
+@keyframes elasticus 
+    0% 
+        transform-origin: 100% 0%;
+        transform: scale(0, 1);
+    50%  
+        transform-origin: 100% 100%;
+        transform: scale(1, 1);
+    
+    50.1%
+        transform-origin: 0% 0%;
+        transform: scale(1, 1);
+    100%
+        transform-origin: 0% 100%;
+        transform: scale(0, 1);
+
+
+@keyframes opacity-item
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+nav 
+    ul 
+        list-style-type: none
+        li
+            display: block
+            a
+                color: #57575b;
+                font-family: 'PFDinTextPro-Regular'
+                font-size: 21px;
+                font-weight: 400;
+                line-height: 42px;
+                text-transform: uppercase;
+                /* Text style for "Т, ехнолог" */
+                letter-spacing: 2.1px;
+                text-decoration: none
+.nav-wrapper
+    position: absolute
+    top: 50px;
+    left: 0;
+    width: 100vw
+    height: 100vh
+    padding: 0
+    background: #fcf8f3;
+    display: none
+    transition: all 0.2s ease;
+    
+    ul
+        width: 100%;
+       
+        margin-top: 70px
+        li
+            display: block;
+            float: none;
+            width: 100%;
+            text-align: left
+            margin-bottom: 10px;
+            
+          
+            a
+                color: #57575b;
+                font-family: 'PFDinTextPro-Regular'
+                font-size: 21px;
+                font-weight: 400;
+                line-height: 42px;
+                text-transform: uppercase;
+                /* Text style for "Т, ехнолог" */
+                letter-spacing: 2.1px;
+                text-decoration: none
+                opacity: 0
+                transform: translateX(-20px);
+                translation: all 0.2s ease;
+
+.nav-btn
+    position: absolute
+    right: 16px;
+    top: -3px
+    display: block
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%
+    i
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: #e2a66f
+        border-radius: 2px;
+        margin-left: 14px;
+        &:nth-child(1)
+            margin-top: 16px
+          
+        &:nth-child(2) 
+            margin-top: 4px;
+            
+
+            opacity: 1;
+        &:nth-child(3) 
+            margin-top: 4px;
+            
+
+
+
+.nav-link
+    color: #e2a66f;
+    font-family: 'PFDinTextPro-Regular'
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    text-decoration: none
+ 
+.nav-item
+    color: #57575b;
+    cursor: pointer
+    font-size: 16px;
+    z-index: 10
+    font-weight: 400;
+    font-family: 'PFDinTextPro-Regular'
+    line-height: 23px;
+    display: block
+    text-transform: uppercase;
+    /* Text style for "О, братный" */
+    letter-spacing: 1.6px;
+    
+    &:after
+        content: ""
+        display: block
+        width: 118px
+        margin-top: 3px
+        height: 2px;
+        background-color: #e0a46c;
+.nav-social
+    width: 100%
+    ul
+        list-style-type: none
+       
+        li
+            display: inline-block
+            width: auto
+            margin-right: 40px
+            a
+                color: #deb485
+                font-size: 16px
+#nav-checked + .nav-btn 
+    transform: rotate(45deg);
+#nav:checked + .nav-btn i 
+    background: #e2a66f
+    transition: transform 0.2s ease;
+#nav:checked + .nav-btn i:nth-child(1) 
+    transform: translateY(6px) rotate(45deg);
+#nav:checked + .nav-btn i:nth-child(2) 
+    opacity: 0;
+#nav:checked + .nav-btn i:nth-child(3) 
+    transform: translateY(-6px) rotate(-45deg);
+#nav:checked ~ .nav-wrapper 
+    z-index: 9990;
+    display: block
+    
+#nav:checked ~ .nav-wrapper ul li a 
+    opacity: 1;
+    transform: translateX(0);
+.hidden 
+    display: none;
+
+@keyframes left-slide
+    from
+        transform: translateX(-100px)
+    to
+        transform: translateX(0px)
+
+.content
+    display: block
+.loading 
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 100%
+    height: 100%
+    z-index: 1001
+.loading_name
+    z-index: -1
+    max-width: 100%
+    order: 1
+.loader
+    width: 300px;
+    height: 3px;
+    display: none
+    background: #f2f2f2;
+    overflow: hidden;
+    order: 2
+    // margin-top: 25px
+    +sm
+        width: 200px
+        // margin-top: 30px
+    
+  
+      
+.loader-line 
+    height: 3px;
+    background: #e2a66f;
+
+
+.a-bounce 
+    animation: 3.5s alternate infinite bounce-item ease-in-out;
+      
+ 
+
+
+
+
+@keyframes bounce-item 
+    0% 
+        width: 0%;
+        transform: translateX(0%);
+
+    50% 
+        transform: translateX(0%);
+
+    100% 
+        width: 100%;
+        transform: translateX(100%);
+
+
+

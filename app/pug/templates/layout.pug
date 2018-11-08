@@ -1,0 +1,42 @@
+block first-line
+|
+|
+doctype html
+html(lang='en')
+	head
+		title Услуги студии красоты, причесок и макияжа "Кружева" в Москве
+		meta(name="description" content="")
+		link(rel="icon" href="../img/favicon.ico")
+		include ../inc/head
+	body
+		.wrapper
+			include ../utils/mixins
+			include ../inc/header
+			|
+			|
+			block main
+			|
+			|
+			include ../inc/footer
+		
+		block scripts
+			<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha256-399DNRyfIpWIy1ZV0KmEIIuIQ5sBHdLu9MBtVHrNtt8=" crossorigin="anonymous"></script>
+			script(src='https://cdnjs.cloudflare.com/ajax/libs/maplace-js/0.2.10/maplace.js', integrity='sha256-J1skHm1U0elkQglbhaNEIMJP29H1Qq4SuGHmRC48ivQ=', crossorigin='anonymous')
+			script(src='js/main.js')
+			script(src='https://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.22&key=AIzaSyC2bA6TBF2KLF6YDNdvsgYIsIQM69deJfs')
+
+			script.
+				$('.owl-carousel').owlCarousel({
+					nav: true,
+					loop: false,
+					dots: true,
+					items: 1,
+					touchDrag: true,
+					navSpeed: 1000,
+					smartSpeed: 1000,
+				});
+				
+
+

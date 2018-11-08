@@ -1,0 +1,44 @@
+.footer
+    padding: 80px 0 80px 0;
+    box-shadow: -2px -12px 81px rgba(233, 208, 180, 0.32);
+    background-color: #ffffff;
+    &-item
+        display: flex
+        justify-content: space-between;
+        +sm 
+            flex-wrap: wrap;
+            justify-content: flex-start; 
+    &-item__text 
+        color: #a9a09d;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 15.8px;
+        /* Text style for "Информация" */
+        letter-spacing: 0.48px; 
+    &-item__box 
+        +sm 
+            padding-top: 32px; 
+    &-item__box-text 
+        color: #a9a09d;
+        font-weight: 300;
+        letter-spacing: 0.48px;
+        display: inline-block;
+        line-height: 15.8px;
+        font-size: 12px;
+        padding-right: 5px;
+        font-family: 'PFDinTextPro-Light'; 
+    &-item__box-link 
+        color: #e2a66f;
+        font-size: 12px;
+        display: inline-block;
+        font-weight: 300;
+        font-family: 'PFDinTextPro-Light';
+        text-decoration: underline; 
+    &-item__box-desc 
+        +font-fallback("Roboto");
+        font-size: 15px;
+        color: #e2a66f;
+        padding-top: 20px;
+        font-weight: 400;
+        letter-spacing: 0.52px;
+        line-height: 9.03px; 

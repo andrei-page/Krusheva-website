@@ -1,0 +1,234 @@
+.price 
+    padding-top: 107px
+    position: relative
+    &__bg
+        position: absolute
+        left: -190px
+        max-width: 100%
+        object-fit: contain
+        +xxl
+            left: -40px
+        +xl2
+            left: -200px
+        +lg
+            left: -210px
+            top: 120px
+        +md
+            display: none
+
+    &-title
+        color: #564f4f;
+        font-family: 'PFDinTextPro-EXThin'
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 61px;
+        /* Text style for "Н, аши цен" */
+        letter-spacing: 1.63px;
+        +lg
+            font-size: 48px
+    &-desc
+        color: #e0a46c;
+        font-family: 'Marianna'
+        position: absolute
+        top: 37px
+        left: 115px
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 45.9px;
+        /* Text style for "Прайс" */
+        letter-spacing: 1.44px;
+        +lg
+            font-size: 48px
+    &-item
+        display: flex
+        justify-content: space-between
+        +lg
+            flex-wrap: wrap
+            justify-content: center
+    &-up
+        margin-top: 80px
+    &-up--second
+        margin-top: 30px
+        +lg
+            margin-top: 0
+    &-item__content
+        flex: 0 0 32.5%
+        max-width: 32.5%
+        padding: 41px 33px 37px 28px
+        text-align: center
+        box-shadow: 4px 11px 40px rgba(225, 208, 189, 0.69);
+        background-color: #ffffff;
+        margin-right: 1.25%
+        +lg
+            max-width: 50%
+            flex: 0 0 50%
+            padding: 30px 20px 30px 20px 
+            +sm
+                max-width: 100%
+                flex: 0 0 100%
+                margin-bottom: 30px
+                padding: 30px 0 0 0
+        &:nth-child(3)
+            margin-right: 0px
+   
+    &-item__content-bg
+        width: 70px
+        height: 70px
+        display: block
+        margin-left: auto
+        margin-right: auto
+    &-item__mod
+        padding: 28px 0
+        +sm
+            padding: 28px 15px !important
+    &-item__down 
+        +mid
+            white-space: normal !important
+            text-align: left
+    &-item__content-title
+        color: #585150;
+        font-family: 'PFDinTextPro-Bold'
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.52px;
+        padding-top: 26px
+        vertical-align: middle
+        +sm
+            padding: 26px 15px 0px 15px
+        
+    &-item__content-text
+        color: #bcb2a8;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0.97px;
+        padding: 17px 0 26px 0
+        +sm
+            padding: 17px 15px 26px 15px
+    &-item__content-box
+        padding: 35px 0 29px 0!important
+    &-item__box
+        display: flex
+        align-items: center
+        justify-content: space-between
+        +sm
+            padding: 0 15px
+        &:before
+            content: ""
+            display: inline-block
+            margin: 0 9px 0 14px
+            width: 100%
+            height: 2px;
+            order: 2
+            vertical-align: middle
+            background-color: #fbeae5;
+     
+    &-item__box-title
+        display: inline-block
+        color: #564f4f;
+        font-size: 14px;
+        order: 1
+        font-weight: 500;
+        font-family: 'PFDinTextPro-Bold'
+        letter-spacing: 1.12px;
+        white-space: nowrap
+       
+    &-item__box-desc
+        display: inline-block
+        font-family: 'PFDinTextPro-NormalRegular'
+        color: #564f4f;
+        order: 3
+        white-space: nowrap
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1.12px;
+    &-item__content-btn
+        background-color: #e2a66f;
+        width: 100%
+        padding: 13px 0 13px 0
+        color: #ffffff;
+        border: none
+        vertical-align: middle
+        font-family: 'PFDinTextPro-Regular'
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "о, н-лайн" */
+        letter-spacing: 0.59px;
+        margin-top: 40px
+        &:hover
+            background-color: #57575b;
+    &-item__up
+        padding: 10px 0 !important
+        +sm
+            padding: 0 15px !important
+#first
+    height: 415px !important 
+    +mid
+        height: 470px !important
+    +lg
+        height: auto !important 
+        margin-bottom: 50px
+    +sm
+        margin-bottom: 30px
+   
+#second
+    height: 555px !important
+    +mid
+        height: auto !important
+    +lg
+        height: auto !important
+        margin-bottom: 50px
+    +sm
+        margin-bottom: 30px
+
+#three
+    height: 475px !important
+    +mid
+        height: 510px !important
+    +lg
+        height: auto !important
+        margin-bottom: 50px
+    +sm
+        margin-bottom: 30px
+
+#four
+    height: 580px !important
+    position: relative
+    bottom: 150px
+    +mid
+        height: auto !important
+        bottom: 200px
+    +lg
+        height: auto !important
+        margin-bottom: 50px
+        position: static
+    +sm
+        margin-bottom: 30px
+#five
+    height: 430px !important
+    position: relative
+    bottom: 10px
+    +mid
+        height: 480px !important
+        bottom: 200px
+        bottom: 5px
+    +lg
+        height: auto !important
+        margin-bottom: 50px
+        position: static
+    +sm
+        margin-bottom: 30px
+#six
+    height: 500px !important
+    position: relative
+    bottom: 90px
+    +mid
+        height: 570px !important
+        bottom: 160px
+    +lg
+        height: auto !important
+        margin-bottom: 50px
+        position: static
+    +sm
+        margin-bottom: 30px

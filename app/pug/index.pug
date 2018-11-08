@@ -1,0 +1,435 @@
+extends templates/layout
+
+block main
+    //- .loading
+    //-     //- img(src="../img/header-logo.png", alt="").loading_name
+    //-     .center.loader
+    //-         .loader-line.a-bounce.invert
+
+    .content
+        header.main-header
+            .header-mobile
+                .container
+                    img(src="img/mobile-logo.png", alt="header-logo").header-logo__mobile
+                    .header-item__mobile
+                        a(href="tel:82343456789")
+                            img(src="img/phone-icon.svg", alt="header-logo").header-phone
+                        nav
+                            input#nav.hidden(type='checkbox')
+                            label.nav-btn(for='nav')
+                                i
+                                i
+                                i
+                            .nav-wrapper
+                                ul
+                                    li.wow.fadeInLeft(data-wow-duration = "1.5s")
+                                        a(href='#tech') Технологии   
+                                    li.wow.fadeInLeft(data-wow-duration = "1.9s")
+                                        a(href='#quest') вопросы
+                                    li.wow.fadeInLeft(data-wow-duration = "2.3s")
+                                        a(href='#price') цены       
+                                    li.wow.fadeInLeft(data-wow-duration = "2.7s")
+                                        a(href='#contact') контакты
+                                    a(href="tel:82343456789")
+                                        .nav-link.wow.fadeInLeft(data-wow-duration = "3s") 8 (234) 345 67 89 
+                                    .nav-item.nav-link.wow.fadeInLeft(data-wow-duration = "3.4s") Обратный звонок 
+                                .nav-social
+                                    ul
+                                        li.wow.fadeInLeft(data-wow-duration = "2.7s")
+                                            a(href="https://www.facebook.com/krujeva",target="_blank")
+                                                i.fab.fa-facebook-f
+                                        li.wow.fadeInLeft(data-wow-duration = "2.3s")
+                                            a(href="https://vk.com/krujevakosa",target="_blank")
+                                                i.fab.fa-vk
+                                        li.wow.fadeInLeft(data-wow-duration = "1.9s")
+                                            a(href="https://www.instagram.com/krujeva",target="_blank")
+                                                i.fab.fa-instagram
+                                        li.wow.fadeInLeft(data-wow-duration = "1.5s")
+                                            a(href="https://www.youtube.com/channel/UCnsZl_wwbqkq60v4Sin4ouA",target="_blank")
+                                                i.fab.fa-youtube
+            .container
+                .header-box
+                    .header-menu
+                        ul
+                            li
+                                a(href="#tech") Технологии
+                            li
+                                a(href="#quest") вопросы
+                            li
+                                a(href="#price") цены
+                            li
+                                a(href="#contact") контакты
+                    a(href="index.html")
+                        img(src="img/header-logo.png", alt="header-logo").header-logo
+                    
+                    .header-item
+                        a(href="tel:82343456789").header-item__phone 8 (234) 345 67 89 
+                        .header-item__link Обратный звонок 
+                .header-row
+                    .header-row__box.wow.fadeInUp(data-wow-duration = "2s")
+                        .header-row__box-title Преобразим ваши брови <br>по-настоящему
+                        .header-row__box-desc виртуозно
+                        form.header-form.wow.fadeInDown(data-wow-duration = "2s",data-wow-delay="1s")
+                            .header-form__title Запись на сеанс
+                            .header-form__top
+                                input(type="text",placeholder="Ваше имя").header-form__input
+                                input(type="telephone",placeholder="+ 7 ( ___) ___-__-__").header-form__input
+                                button.header-form__btn он-лайн запись
+                    img(src="img/header-bg.jpg", alt="").header-row__bg
+                    img(src="img/item-img.png", alt="item-img").header-item__bg
+
+                .header-social
+                    a(href="https://www.facebook.com/krujeva",target="_blank")
+                        i.fab.fa-facebook-f.header-social__icons
+                    a(href="https://vk.com/krujevakosa",target="_blank")
+                        i.fab.fa-vk.header-social__icons
+                    a(href="https://www.instagram.com/krujeva",target="_blank")
+                        i.fab.fa-instagram.header-social__icons
+                    a(href="https://www.youtube.com/channel/UCnsZl_wwbqkq60v4Sin4ouA",target="_blank")
+                        i.fab.fa-youtube.header-social__icons
+                a(href="#otzivi").header-scroll листать вниз
+                .header-pop__bg
+                    .header-pop
+                        .header-pop__title Заказать обратный звонок
+                        form()
+                            input(type="text",placeholder="Ваше имя").header-pop__input
+                            input(type="telephone",placeholder="+ 7 ( ___) ___-__-__").header-pop__input
+                            input(type="text",placeholder="Удобное время для звонка").header-pop__input
+                            button.header-pop__btn он-лайн запись
+                        .header-pop__exit
+                            span
+                            span
+
+        .otzivi#otzivi.wow.fadeInUp(data-wow-duration = "2.3s",data-wow-offset="10")
+            .container
+                .otzivi-title Наши звезды
+                .otzivi-desc Отзывы
+                img(src="img/flowers-bg.png", alt="flower").otzivi-bg
+                .owl-carousel.owl-theme
+                    .item
+                        .otzivi-box
+                            img(src="img/otzivi-img-1.jpg", alt="otzivi-png").otzivi-box__img
+                            .otzivi-box__item
+                                img(src="img/ins-img.jpg", alt="instagram").otzivi-box__item-img
+                                .otzivi-box__item-text Я уже прошла многое с моими бровями) Но всегда хотела вырастить<br> свои... родные, пушистые. Когда узнала о новой процедуре в <br>@krujeva, решила попробовать Прохожу СПА-ТЕРАПИЮ ДЛЯ РОСТА<br> Бровей. Заботятся о них шикарно патчи накладывают, дарсонвалем <br>водят, красят, 9 маслами мажут А какие они после всех процедур <br>красивые. Растите, мои бровки... 
+                                        a(href="#").otzivi-box__span подробнее
+                                .otzivi-box__desc
+                                    .otzivi-box__desc-title Объем
+                                    .otzivi-box__desc-text Одинарный
+                                .otzivi-box__desc.otzivi-box__top
+                                    .otzivi-box__desc-title Эффект
+                                    .otzivi-box__desc-text.otzivi-box--left Лисий
+                                a(href="#").otzivi-box__link Стоимоcть работы 
+                    .item
+                        .otzivi-box
+                            img(src="img/otzivi-img-2.jpg", alt="otzivi-png").otzivi-box__img
+                            .otzivi-box__item
+                                img(src="img/inst-img-2.jpg", alt="instagram").otzivi-box__item-img
+                                .otzivi-box__item-text.otzivi-box__item-mod Как и отвечала всем, пишу тут, о том, что это очень кропотливый<br> труд, но вот я второй раз у моего мастера Анастасии и процесс идёт<br> и скажу вам, он очень приятен! После второго посещения получила<br> вид благородных бровок, которые в свою очередь улучшают и <br>преображают вообще моё лицо...
+                                    a(href="#").otzivi-box__span подробнее
+                                .otzivi-box__desc
+                                    .otzivi-box__desc-title Объем
+                                    .otzivi-box__desc-text Одинарный
+                                .otzivi-box__desc.otzivi-box__top
+                                    .otzivi-box__desc-title1 Эффект
+                                    .otzivi-box__desc-text Лисий
+                                a(href="#").otzivi-box__link Стоимоcть работы 
+                    .item
+                        .otzivi-box
+                            img(src="img/otzivi-img-3.jpg", alt="otzivi-png").otzivi-box__img
+                            .otzivi-box__item
+                                img(src="img/inst-img-3.jpg", alt="instagram").otzivi-box__item-img
+                                .otzivi-box__item-text.otzivi-box__item-mod--second Впервые в жизни всё-таки решилась на коррекцию <br>бровей! Я очень переживала, но напрасно. Заботливые<br> пчёлки в @krujeva сделали мои бровки идеальными….
+                                .otzivi-box__desc
+                                    .otzivi-box__desc-title Объем
+                                    .otzivi-box__desc-text Одинарный
+                                .otzivi-box__desc.otzivi-box__top
+                                    .otzivi-box__desc-title1 Эффект
+                                    .otzivi-box__desc-text Лисий
+                                a(href="#").otzivi-box__link Стоимоcть работы 
+                    
+        .work#tech.wow.fadeInUp(data-wow-duration = "2.3s",data-wow-offset="10")
+            .container
+                .work-title Технология нашей
+                .work-desc работы
+                .work-item
+                    
+                    .work-item__box.work-item__arrow--second.wow.fadeInUp(data-wow-duration = "2s",data-wow-delay="0.5")
+                        img(src="img/work-2.jpg", alt="work-1").work-item__img.work-up
+                        .work-item__bg
+                            .work-item__number 01
+                            .work-item__text.work-item__mod4 Пинцетом придаем <br>форму, учитывая все <br>особенности вашего лица.
+                    .work-item__box.work-down.work-item__arrow--first.wow.fadeInUp(data-wow-duration = "2s",data-wow-delay="0.8s")
+                        img(src="img/work-1.jpg", alt="work-1").work-item__img
+                        .work-item__bg
+                            .work-item__number 02
+                            .work-item__text.work-item__mod Удаляем пушковые<br> волосы. 
+                    .work-item__box.work-item__arrow--three.wow.fadeInUp(data-wow-duration = "2s",data-wow-delay="1.1s")
+                        img(src="img/work-3.jpg", alt="work-1").work-item__img.work-up
+                        .work-item__bg
+                            .work-item__number 03
+                            .work-item__text Формируем <br>линию бровей.
+                .work-item.work-down
+                    .work-item__box.work-item__position.work-content.wow.fadeInUp(data-wow-duration = "2s",data-wow-delay="2.1s")
+                        .work-item__box-bg
+                        .work-item__circle
+                        .work-item__box-title Видео
+                        .work-item__bg
+                            .work-item__text.work-item__mod2 Посмотреть<br> ознакомительное<br> видео.
+                        .work-item__box-circle
+                            .work-item__box-play
+                    .work-item__box.work-item__arrow--six.work-down.wow.fadeInUp(data-wow-duration = "2s",data-wow-delay="1.8s")
+                        img(src="img/work-5.jpg", alt="work-1").work-item__img
+                        .work-item__bg
+                            .work-item__number 05
+                            .work-item__text.work-item__mod3  Любуемся <br>идеальными <br>бровями.
+                    .work-item__box.work-item__arrow--four.wow.fadeInUp(data-wow-duration = "2s",data-wow-delay="1.5s")
+                        img(src="img/work-4.jpg", alt="work-1").work-item__img
+                        .work-item__bg
+                            .work-item__number 04
+                            .work-item__text Окрашиваем <br>брови хной.
+                .work-video
+                    .work-video__box
+                        iframe(width='65%', height='65%', src='https://www.youtube.com/embed/h40uB1Tn2Ww?rel=0&controls=0', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='').work-video__iframe
+                        .work-video__exit
+                            span
+                            span
+
+        .time.wow.fadeInUp(data-wow-duration = "2.3s",data-wow-offset="10")
+            .container
+                .time-box
+                    img(src="../img/time-bg.jpg", alt="").time-box__bg
+                    .time-box__item
+                        .time-box__item-title Нам важно
+                        .time-box__item-desc остаться с вами <br>друзьями
+                        .time-box__item-text
+                            ul
+                                li  Мы сделаем ваши брови густыми <br>и ухоженными.
+       
+                                li Наши талантливые броу-артисты знают <br> все о дизайне бровей.
+                                li Только высококлассные и деликатные материалы
+                    img(src="../img/time-pen.jpg", alt="time pen").time-box__item-img
+                    img(src="/img/time-bg-mobile.jpg", alt="time bg").time-mobile__img
+                    img(src="../img/flower-mobile.jpg", alt="flower").time-mobile
+            .time-bg
+        .result 
+            .container 
+                .result-title Наши работы
+                .result-desc Результат
+                .result-box.result-up
+                    .result-box__item#item1.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="0.5s")
+                        img(src="/img/result-img-1.jpg", alt="").result-box__item-img
+                        .result-box__item-bg
+                            img(src="../img/search.svg", alt="").result-box__search
+                    .result-box__item#item2.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="0.8s")
+                        img(src="/img/result-img-2.jpg", alt="").result-box__item-img
+                        .result-box__item-bg
+                            img(src="../img/search.svg", alt="").result-box__search
+                    .result-box__item#item3.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="1.1s")
+                        img(src="/img/result-img-2.jpg", alt="").result-box__item-img
+                        .result-box__item-bg
+                            img(src="../img/search.svg", alt="").result-box__search
+                .result-box
+                    .result-box__item#item4.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="1.4s")
+                        img(src="/img/result-img-4.jpg", alt="").result-box__item-img
+                        .result-box__item-bg
+                            img(src="../img/search.svg", alt="").result-box__search
+                    .result-box__item#item5.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="1.8s")
+                        img(src="/img/result-img-5.jpg", alt="").result-box__item-img
+                        .result-box__item-bg
+                            img(src="../img/search.svg", alt="").result-box__search
+                    .result-box__item#item6.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="2.1s")
+                        img(src="/img/result-img-6.jpg", alt="").result-box__item-img
+                        .result-box__item-bg
+                            img(src="../img/search.svg", alt="").result-box__search
+                .result-item
+                    a(href="#").result-item__link загрузить еще
+                    .result-item__text Или
+                    .result-item__social
+                        ul
+                            li
+                                a(href="https://vk.com/krujevakosa",target="_blank") vkontakte  
+                            li
+                                a(href="https://www.instagram.com/krujeva/",target="_blank")  instagram  
+                            li
+                                a(href="https://www.facebook.com/krujeva/",target="_blank")   facebook
+            img(src="../img/result-bg.jpg", alt="").result-bg
+
+
+
+                    
+        .price#price.wow.fadeInUp(data-wow-duration = "2s",data-wow-offset="10")
+            img(src="/img/flower-price.jpg", alt="").price__bg
+            .container
+                .price-title Наши цены
+                .price-desc Прайс
+                .price-item.price-up
+                    .price-item__content#first.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="0.5s")
+                        img(src="/img/price-bg-6.svg", alt="bg-1").price-item__content-bg
+                        .price-item__content-title Долговременная <br>укладка бровей
+                        .price-item__content-text Революционная методика! Соболиные брови <br>«волосок к волоску» идеальной формы до 2<br> месяцев. Дизайн пинцетом и нитью, а также<br> ухаживающие патчи под глазки в подарок.
+                        .price-item__box
+                            .price-item__box-title Цена
+                            .price-item__box-desc 1990 Р
+                        
+                        button.price-item__content-btn он-лайн запись
+                    .price-item__content#second.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="0.7s")
+                        img(src="/img/price-bg-2.svg", alt="bg-2").price-item__content-bg
+                        .price-item__content-title Архитектура <br>бровей
+                        .price-item__content-text Подбор индивидуальной формы бровей <br>(с прорисовкой), моделирование бровей, <br>удаление лишних волос с использованием <br>пинцета и нити, скраб/шампунь для бровей,<br> окрашивание краской для бровей или хной,<br> профессиональный макияж для подчеркивания<br> формы бровей, патчи под глаза — <br>«эффект фотошопа».
+                        .price-item__box
+                            .price-item__box-title Бровист
+                            .price-item__box-desc 1990 Р
+                        .price-item__box.price-item__mod
+                            .price-item__box-title Топ-бровист
+                            .price-item__box-desc 1990 Р
+                        .price-item__box
+                            .price-item__box-title.price-item__down Ведущий бровист-преподаватель
+                            .price-item__box-desc 1990 Р
+                        button.price-item__content-btn он-лайн запись
+                
+                    .price-item__content#three.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="0.9s")
+                        img(src="/img/price-bg-1.svg", alt="bg-3").price-item__content-bg
+                        .price-item__content-title Дизайн бровей
+                        .price-item__content-text.price-item__content-box Моделирование формы бровей <br>с помощью пинцета и нити
+                        .price-item__box
+                            .price-item__box-title Бровист
+                            .price-item__box-desc 1990 Р
+                        .price-item__box.price-item__mod
+                            .price-item__box-title Топ-бровист
+                            .price-item__box-desc 1990 Р
+                        .price-item__box
+                            .price-item__box-title.price-item__down Ведущий бровист-преподаватель
+                            .price-item__box-desc 1990 Р
+                        
+                        button.price-item__content-btn он-лайн запись
+                .price-item.price-up--second
+                    .price-item__content#four.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="1.1s")
+                        img(src="/img/price-bg-5.svg", alt="bg-1").price-item__content-bg
+                        .price-item__content-title Архитектура бровей <br>со спа-терапией для роста
+                        .price-item__content-text Подбор индивидуальной формы бровей<br> (с прорисовкой), моделирование бровей,<br> удаление лишних волос с использованием <br>пинцета и нити, скраб/шампунь для бровей,<br> стимуляция роста волосков с применением<br> дарсонваль-терапии,окрашивание краской для <br>бровей или хной, патчи под глаза — «эффект <br>фотошопа», ухаживающие патчи для бровей и <br>нанесение девяти питающих масел,усиливающих<br> активизацию волосяных луковиц.
+                        .price-item__box
+                            .price-item__box-title Бровист
+                            .price-item__box-desc 1990 Р
+                        .price-item__box.price-item__mod
+                            .price-item__box-title Топ-бровист
+                            .price-item__box-desc 1990 Р
+                        .price-item__box
+                            .price-item__box-title.price-item__down Ведущий бровист-преподаватель
+                            .price-item__box-desc 1990 Р
+                        
+                        button.price-item__content-btn он-лайн запись
+                    .price-item__content#five.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="1.3s")
+                        img(src="/img/price-bg-4.svg", alt="bg-2").price-item__content-bg
+                        .price-item__content-title СПА-терапия <br>для роста бровей
+                        .price-item__content-text Стимуляция роста волосков с применением <br>дарсонваль-терапии, нанесением патчей<br> для бровей и девяти питающих спа-масел,<br> усиливающих активизацию волосяных луковиц.
+                        .price-item__box.price-item__up
+                            .price-item__box-title Цена
+                            .price-item__box-desc 1990 Р
+                        button.price-item__content-btn он-лайн запись
+                    .price-item__content#six.wow.fadeInUp(data-wow-duration = "1.7s",data-wow-delay="1.5s")
+                        img(src="/img/price-bg-3.svg", alt="bg-2").price-item__content-bg
+                        .price-item__content-title Окрашивание хной <br> Brow Henna или  <br> стойкой краской Elan
+                        .price-item__content-text.price-item__content-box С прорисовыванием формы бровей супрой.
+                        .price-item__box
+                            .price-item__box-title Бровист
+                            .price-item__box-desc 1990 Р
+                        .price-item__box.price-item__mod
+                            .price-item__box-title Топ-бровист
+                            .price-item__box-desc 1990 Р
+                        .price-item__box
+                            .price-item__box-title.price-item__down Ведущий бровист-преподаватель
+                            .price-item__box-desc 1990 Р
+                        button.price-item__content-btn он-лайн запись
+        .contact#contact.wow.fadeInUp(data-wow-duration = "2.3s",data-wow-offset="10")
+            .container
+                .contact-title Кружева
+                .contact-desc  сеть студий <br>у вашего дома
+                img(src="/img/tassel.jpg", alt="").contact-tassel
+                .contact-item.wow.fadeInUp(data-wow-duration = "2.3s",data-wow-delay="1s")
+                    .contact-accordion
+                        li.accordion-item
+                            a.loc_link(data-loc="1").accordion-link
+                                | ТЦ “АЛЕКСАНДР”
+                            div.accordion-div
+                                .contact-item--box
+                                    .contact-item__box-text г. Москва, ул. Пришвина, 22
+                                    a(href="tel:89851701616")
+                                        .contact-item__box-number 8 985 170 1616
+                                    .contact-item__box-street м. Бибирево, второй этаж <br>ТЦ “Александр”, напротив магазина “Эльдорадо”
+                        li.accordion-item
+                            a.loc_link(data-loc="2").accordion-link
+                                | ТЦ “ЗОЛОТОЙ ВАВИЛОН”
+                            div.accordion-div
+                                .contact-item--box
+                                    .contact-item__box-text г. Москва, ул. Декабристов, д.12
+                                    a(href="tel:89857377877")
+                                        .contact-item__box-number 8 985 737 7877
+                                    .contact-item__box-street м. Отрадное, второй этаж <br> ТЦ “Золотой Вавилон”, напротив магазина “ZARINA
+                        li.accordion-item
+                            a.loc_link(data-loc="3").accordion-link
+                                | ТЦ “СПЕКТР”
+                            div.accordion-div
+                                .contact-item--box
+                                    .contact-item__box-text г. Москва, Новоясеневский проспект, 1
+                                    a(href="tel:89096797070")
+                                        .contact-item__box-number 8 909 679 7070   
+                                    .contact-item__box-street м. “Теплый Стан”, второй этаж<br> ТЦ “Спектр”, около магазина “INCITY
+                        li.accordion-item
+                            a.loc_link(data-loc="4").accordion-link
+                                | ТЦ “СЕРЕБРЯНЫЙ ДОМ”
+                                span.contact-item__span 1 этаж
+                            div.accordion-div
+                                .contact-item--box
+                                    .contact-item__box-text г. Москва, ул. Б. Семеновская, дом 16, стр. 7
+                                    a(href="tel:89651874868")
+                                        .contact-item__box-number 8 965 187 4868
+                                    .contact-item__box-street м. Электрозаводская, на первом этаже торгового центра,<br> напротив магазина “Paolo Conte”
+                        li.accordion-item
+                            a.loc_link(data-loc="5").accordion-link
+                                | ТЦ “СЕРЕБРЯНЫЙ ДОМ”
+                                span.contact-item__span 2 этаж
+                            div.accordion-div
+                                .contact-item--box
+                                    .contact-item__box-text г. Москва, ул. Б. Семеновская, дом 16, стр. 7
+                                    a(href="tel:89651874868")
+                                        .contact-item__box-number 8 965 187 4868
+                                    .contact-item__box-street м. Электрозаводская, на третьем этаже торгового центра,<br> рядом с магазином “Унция”
+                        li.accordion-item
+                            a.loc_link(data-loc="6").accordion-link
+                                | ТЦ “ЭКВАТОР” (РЕУТОВ)
+                            div.accordion-div
+                                .contact-item--box
+                                    .contact-item__box-text г. Реутов, ул. Октября, владение 10
+                                    a(href="tel:89151468490")
+                                        .contact-item__box-number 8 915 146 8490
+                                    .contact-item__box-street м. Новокосино, второй этаж торгового центра,<br> рядом с рестораном “Станция”
+                        li.accordion-item
+                            a.loc_link(data-loc="7").accordion-link
+                                | ТЦ “ПЛАНЕРНАЯ
+                            div.accordion-div
+                                .contact-item--box
+                                    .contact-item__box-text г. Москва, ул. Планерная, дом 7
+                                    a(href="tel:89168461280")
+                                        .contact-item__box-number 8 916 846 1280
+                                    .contact-item__box-street м. Планерная, второй этаж торгового центра,<br> напротив магазина “Ralf Ringer”
+                    #controls
+                    #gmap
+
+                form.header-form.contact-form.wow.fadeInUp(data-wow-duration = "2.3s",data-wow-delay="1s")
+                    .header-form__title Запись на сеанс
+                    .header-form__top
+                        input(type="text",placeholder="Ваше имя").header-form__input
+                        input(type="telephone",placeholder="+ 7 ( ___) ___-__-__").header-form__input
+                        button.header-form__btn он-лайн запись
+        footer.footer.wow.fadeInUp(data-wow-duration = "2s",data-wow-offset="10")
+            .container
+                .footer-item
+                    .footer-item__text Информация на данном интернет-сайте носит исключительно <br>ознакомительный характер и ни при каких условиях<br> не является публичной офертой.
+                    .footer-item__box
+                        .footer-item__box-text Все права принадлежат 
+                        a(href="https://krujevakosa.ru",target="_blank").footer-item__box-link https://krujevakosa.ru
+                        .footer-item__box-desc Политика конфиденциальности
+                
+                    
+

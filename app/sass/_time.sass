@@ -1,0 +1,139 @@
+.time
+    position: relative
+    +sm
+        margin-top: 50px
+    &-box
+        display: flex
+        justify-content: space-between
+        margin-right: 15px
+        margin-left: 15px
+        
+    &-box__bg
+        max-width: 100%
+        object-fit: cover
+        position: relative
+        right: 250px
+        z-index: -10
+        +xl
+            object-fit: contain
+        +lg
+            display: none
+        
+
+    &-box__item
+        position: relative
+        top: 290px
+        right: 370px
+        +xl
+            right: 370px
+        +lg
+            position: static
+    &-bg
+        background: url("../img/bg.png") center no-repeat
+        background-size: cover
+        height: 566px
+        z-index: -10
+        position: absolute
+        bottom: -290px  
+        width: 100%
+        +lg
+            bottom: -540px
+        +sm
+            bottom: -520px
+    &-mobile
+        max-width: 100%
+        display: none
+        +sm
+            display: block
+            position: absolute
+            left: 0
+            z-index: -50
+            top: -30px
+    &-box__item-title
+        color: #e0a46c;
+        font-family: 'Marianna'
+        font-size: 144px;
+        font-weight: 400;
+        line-height: 45.9px;
+        white-space: nowrap
+        position: relative
+        right: 180px
+        /* Text style for "Время жизн" */
+        letter-spacing: 2.88px;
+        +xl
+            right: 150px
+        +lg
+            position: static
+            font-size: 100px
+        +sm
+            font-size: 67px
+    &-box__item-desc
+        color: #564f4f;
+        font-family: 'PFDinTextPro-EXThin'
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 61px;
+        margin-top: 40px
+        white-space: nowrap
+        /* Text style for "б, ровей" */
+        letter-spacing: 1.63px;
+        +lg
+            font-size: 55px
+            line-height: 44px;
+            letter-spacing: 1.02px;
+
+
+        +sm
+            font-size: 40px
+            line-height: 44px;
+            /* Text style for "б, ровей с" */
+            letter-spacing: 1.02px;
+    &-box__item-img
+        max-width: 100%
+        position: absolute
+        bottom: 50px
+        right: -320px
+        z-index: -10
+       
+    &-mobile__img
+        max-width: 100%
+        object-fit: contain
+        display: none
+        z-index: -10
+        +lg
+            position: absolute
+            right: 0
+            display: block
+
+        +sm
+
+            right: 0
+            top: 180px
+    &-box__item-text
+        ul
+            list-style: none
+            padding: 0
+            padding-top: 5px
+            li
+                color: #564f4f;
+                font-size: 16px;
+                margin-top: 30px
+                font-weight: 300;
+                max-width: 500px
+                /* Text style for "На протяже" */
+                letter-spacing: 1.14px;
+                +lg
+                    font-size: 17px
+                +sm
+                    font-size: 15px
+                    max-width: 300px
+                &::before 
+                    content: ""
+                    margin-right: 10px
+                    display: inline-block
+                    width: 5px;
+                    height: 5px;
+                    background-color: #e0a46c;
+                    vertical-align: middle
+                    border-radius: 50%
+                    margin-bottom: 3px

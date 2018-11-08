@@ -1,0 +1,76 @@
+.question
+    margin-top: -60px
+    padding-bottom: 104px
+    position: relative
+    +lg
+        margin-top: 30px
+    &-title 
+        color: #564f4f;
+        font-family: 'PFDinTextPro-EXThin'
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 61px;
+        /* Text style for "О, тветы" */
+        letter-spacing: 1.63px;
+    &-desc
+        position: absolute
+        top: 40px
+        left: 108px
+        color: #e0a46c;
+        font-family: Marianna;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 45.9px;
+        /* Text style for "faq" */
+        letter-spacing: 1.44px;
+    &-accordion
+        text-decoration: none
+        margin-top: 80px
+        padding: 0
+        li
+            position: relative
+            list-style-type: none
+            border: 1px solid #e9d0b4;
+            padding: 0px 0 7px 86px
+            margin-bottom: 22px
+            p 
+                display: none
+                font-family: 'PFDinTextPro-NormalRegular'
+                color: #bcb2a8;
+                font-size: 13px;
+                font-weight: 400;
+                /* Text style for "Революцион" */
+                letter-spacing: 0.97px;
+                padding-bottom: 20px
+            a
+                width: 100%
+                display: block
+                margin-top: 24px
+                color: #564f4f;
+                text-decoration: underline
+                text-decoration-color: #e9d0b4
+                font-family: 'PFDinTextPro-NormalRegular'
+                font-size: 16px;
+                font-weight: 400
+                cursor: pointer
+                padding-bottom: 20px
+                /* Text style for "Что такое" */
+                letter-spacing: 1.14px;
+                transition: 1s cubic-bezier(0.42, 0, 1, 1)
+                &:after
+                    content: ""
+                    display: block
+                    background: url("../img/question.png") center no-repeat
+                    width: 23px
+                    height: 23px
+                    position: absolute
+                    left: 30px
+                    top: 22px
+            a.active:after
+                content: ""
+                display: block
+                background: url("../img/question-2.png") center no-repeat
+                width: 23px
+                height: 23px
+
+                

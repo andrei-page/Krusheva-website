@@ -1,0 +1,190 @@
+.result
+    position: relative
+    +lg
+        margin-top: 100px
+    &-title
+        color: #564f4f;
+        font-family: 'PFDinTextPro-EXThin'
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 61px;
+        letter-spacing: 1.63px;
+        +sm
+            font-size: 48px
+    &-desc
+        color: #e0a46c;
+        font-family: 'Marianna'
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 45.9px;
+        letter-spacing: 1.44px;
+        position: absolute
+        top: 40px
+        left: 133px 
+        +sm
+            font-size: 48px
+            left: 120px
+            top: 35px
+    &-box
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        +lg
+            justify-content: center
+    &-item
+        margin-top: 140px
+        +sm
+            margin-top: 30px
+    &-item__link
+        text-decoration: none
+        font-family: 'PFDinTextPro-Regular'
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "з, агрузит" */
+        color: #e2a66f;
+        letter-spacing: 0.59px;
+        &:hover
+            color: #57575b;
+    &-item__social
+        ul
+            list-style-type: none
+            padding: 0
+            margin: 0
+            li
+                display: inline-block
+                margin-right: 30px
+                &:nth-child(3)
+                    margin-right: 0
+                a
+                    color: #e2a66f;
+                    font-family: 'PFDinTextPro-Regular'
+                    font-size: 20px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    /* Text style for "v, kontakt" */
+                    color: #e2a66f;
+                    text-decoration: none
+                    letter-spacing: 0.59px;
+                    &:hover
+                        color: #57575b;
+                    &:after
+                        content: ""
+                        width: 100%
+                        height: 2px
+                        display: block
+                        background-color: #919191
+                  
+
+    &-item__text
+        font-family: 'PFDinTextPro-Regular'
+        color: #919191;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* Text style for "И, ли" */
+        letter-spacing: 0.59px;
+        padding: 29px 0 32px 0
+    &-up
+        margin-top: 150px
+        +sm
+            margin-top: 80px 
+    &-box__item
+        flex: 0 0 33.333333%
+        max-width: 33.333333%
+        cursor: pointer
+        position: relative
+        +lg
+            flex: 0 0 100%
+            max-width: 100%
+    &-box__item-img
+        max-width: 100%
+        object-fit: contain
+        box-shadow: -2px -12px 81px rgba(233, 208, 180, 0.32);
+        +lg
+            display: block
+            margin-left: auto
+            margin-right: auto
+            padding-left: 15px
+            padding-right: 15px
+            margin-bottom: 20px
+            box-shadow: none
+            width: 100%
+
+
+    &-box__item-bg
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        background-color: rgba(233, 208, 181, 0.7)
+        width: 93.5%
+        height: 99%
+        opacity: 0
+        +lg
+            width: 97%;
+            display: block;
+            margin-right: auto;
+            height: 97.5%
+            margin-left: auto;
+        +md
+            width: 96%
+            height: 97%
+        +sm
+            width: 94.5%;
+            display: block;
+            margin-right: auto;
+            height: 95.4%
+            margin-left: auto;
+        +xs
+            width: 92%
+            height: 94%
+    &-box__search
+        font-size: 29px
+        position: absolute
+        fill: #ffffff
+        bottom: 20px
+        left: 21px
+    &-bg
+        position: absolute
+        right: 0
+        z-index: -10
+        bottom: -200px
+        +xl2
+            display: none
+.result-box__item:hover .result-box__item-bg
+    transition: .5s linear
+    
+    opacity: 1 
+#item1
+    height: 95% !important
+   
+#item2
+    position: relative
+    top: 34px
+    +lg
+        top: 0
+#item3
+    position: relative
+    top: 57px
+    +lg
+        top: 0
+#item4 
+    position: relative
+    top: 5px
+    height: 95% !important
+    +lg
+        top: 0
+#item5
+    position: relative
+    top: 55px
+    height: 95% !important
+    +lg
+       top: 0
+#item6
+    position: relative
+    top: 80px
+    height: 95% !important
+    +lg
+        top: 0
